@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">   
+<head>  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="javascript/script.js"></script>
+</head>  
+<body>  
+  <h1>Contact Us</h1> 
+  <form action="/submit" method="post"> 
+    <fieldset> 
+      <legend>Personal Details</legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="fullname" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label>Select Amenities:</label><br>
+      <input type="checkbox" id="wifi" name="amenities" value="WiFi">
+      <label for="wifi">WiFi</label><br>
+      <input type="checkbox" id="ac" name="amenities" value="AC">
+      <label for="ac">Air Conditioning</label><br>
+      <input type="checkbox" id="parking" name="amenities" value="Parking">
+      <label for="parking">Parking</label><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="checkin">Check-in Date:</label><br>
+      <input type="date" id="checkin" name="checkin"><br><br>
+
+      <label for="checkout">Check-out Date:</label><br>
+      <input type="date" id="checkout" name="checkout"><br><br>
+
+      <label for="message">Suggestion:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Info</legend>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="in">India</option>
+        <option value="us">USA</option>
+      </select> 
+
+    </fieldset>
+
+    <div style="text-align:center;">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <footer>
+    <p>&copy; Saturo Gojo</p>
+  </footer>
+</body>
+</html>
